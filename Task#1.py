@@ -29,12 +29,11 @@ def smartest_hero(first, second, third):
 # Читал, что все ситуативно, раз создаю на один раз, то лучше в main, а если бы
 # изменял классы далее, или что-то добавлял в них, то лучше сразу до main, прошу совета у преподавателя
 
-Hulk = Character(TOKEN, 'Hulk')
-Captain = Character(TOKEN, 'Captain America')
-Thanos = Character(TOKEN, 'Thanos')
-Hulk.char_intelligence()
-Thanos.char_intelligence()
-
 
 if __name__ == '__main__':
+    Hulk = Character(TOKEN, 'Hulk')
+    Captain = Character(TOKEN, 'Captain America')
+    Thanos = Character(TOKEN, 'Thanos')
+    Hulk.char_intelligence()
+    Thanos.char_intelligence()
     smartest_hero(Hulk, Captain, Thanos)
